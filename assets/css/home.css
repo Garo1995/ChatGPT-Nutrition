@@ -292,7 +292,9 @@ p{
 .circle-three{
     background-image: url("../img/circle-3.png");
 }
-
+.eating-frut-mob{
+    display: none;
+}
 @media (max-width: 1099px){
     .healthy-product {
         top: 54px;
@@ -414,15 +416,41 @@ p{
 
     }
     .healthy-product {
-        max-width: 320px;
-        left: -80px;
-        bottom: -9px;
+        max-width: 290px;
+        left: 0;
+        bottom: -40px;
+    }
+    .healthy-product:before{
+        content: "";
+        position: absolute;
+        top: 32px;
+        left: 17px;
+        background-image: url("../img/frutis.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 162px;
+        width: 100%;
+        height: 106px;
     }
     .healthy-eating-one{
         display: none;
     }
+    .eating-frut-mob{
+        display: block;
+    }
+    .eating-frut-desc{
+        display: none;
+    }
 }
-
+@media (max-width: 350px){
+    .healthy-product {
+        max-width: 244px;
+        bottom: -10px;
+    }
+    .healthy-product:before {
+        top: 19px;
+    }
+}
 
 
 
